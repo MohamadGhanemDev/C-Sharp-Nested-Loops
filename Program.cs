@@ -1,0 +1,47 @@
+﻿
+for (int i = 0; i < 5; i++)
+{
+    //Console.WriteLine("Iam the First loop: " + i);
+    for (int j = 0; j < 5; j++)
+    {
+        //Console.WriteLine("Iam the Second loop: " + j);
+
+        Console.WriteLine(i);
+    }
+}
+
+/*
+          i=0               j=0        output 
+i<5?       0        j<5?      0           0
+                    j<5?      1           0
+                    j<5?      2           0
+                    j<5?      3           0   
+                    j<5?      4           0   4<5? > true condition > break GO and increment i
+                                                  
+i<5? i++   1                  0           1   
+                              1           1       
+                              2           1         
+                              3           1          
+                              4           1   4<5? > true condition > break GO and increment i
+                                              
+i<5? i++   2                  0           2       
+                              1           2   
+                              2           2      
+                              3           2    
+                              4           2   4<5? > true condition > break GO and increment i
+                                                
+i<5? i++   3                  0           3      
+                              1           3          
+                              2           3           
+                              3           3            
+                              4           3   4<5? > true condition > break GO and increment i
+                                               
+i<5?i++    4                  0           4          
+                              1           4         
+                              2           4       
+                              3           4           
+                              4           4   4<5? > true condition > break GO and increment i
+
+         i<5? > true condition > break
+             
+ */ 
